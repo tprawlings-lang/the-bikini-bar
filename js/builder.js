@@ -14,15 +14,15 @@ const BUILDER = {
     { id: "classic", name: "Classic Bottom", price: 39.99 },
   ],
   colors: [
-    { id: "pina-cream", name: "Piña Cream", hex: "#FFF3E8" },
-    { id: "flamingo-pink", name: "Flamingo Pink", hex: "#FF2D88" },
-    { id: "pink-paloma", name: "Pink Paloma", hex: "#FF7AB8" },
-    { id: "coral-crush", name: "Coral Crush", hex: "#FF7A66" },
-    { id: "gold-rush", name: "Gold Rush", hex: "#FFB341" },
-    { id: "palm-green", name: "Palm Green", hex: "#1F8A70" },
-    { id: "lime-twist", name: "Lime Twist", hex: "#C8FF4D" },
+    { id: "shell-cream", name: "Shell Cream", hex: "#FFF7ED" },
+    { id: "petal-pink", name: "Petal Pink", hex: "#FFC1D6" },
+    { id: "flamingo-pink", name: "Flamingo Pink", hex: "#FF4FA3" },
+    { id: "coral-crush", name: "Coral Crush", hex: "#FF6F61" },
+    { id: "gold-rush", name: "Gold Rush", hex: "#D4AF37" },
+    { id: "salted-sage", name: "Salted Sage", hex: "#6F8F6B" },
+    { id: "palm-green", name: "Palm Green", hex: "#0F3D2E" },
     { id: "tide-pool", name: "Tide Pool Teal", hex: "#1EB6A7" },
-    { id: "midnight-black", name: "Midnight Black", hex: "#181018" },
+    { id: "after-dark", name: "After Dark", hex: "#1C1014" },
   ],
   charms: [
     { id: "gold-star", name: "Gold Star", price: 4.0 },
@@ -32,7 +32,7 @@ const BUILDER = {
     { id: "heart", name: "Heart Charm", price: 4.0 },
     { id: "letter", name: "Letter Charm", price: 4.0 },
     { id: "pearl", name: "Pearl Drop", price: 5.0 },
-    { id: "disco-ball", name: "Disco Ball", price: 5.0 },
+    { id: "sun", name: "Sun Charm", price: 4.0 },
   ],
 };
 
@@ -97,9 +97,8 @@ function updateUI() {
     const stage = document.getElementById("preview-stage");
     stage.style.background = build.color.hex + "26";
     const icon = document.getElementById("preview-icon");
-    const stroke = build.color.id === "midnight-black" ? "#FF7AB8" : build.color.hex;
+    const stroke = build.color.id === "shell-cream" ? "#D4AF37" : build.color.hex;
     icon.setAttribute("stroke", stroke);
-    icon.style.filter = "drop-shadow(0 0 8px " + stroke + "80)";
   }
 
   document.querySelector('[data-step="top"]').classList.toggle("done", !!build.top);

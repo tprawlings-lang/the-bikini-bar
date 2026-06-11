@@ -3,10 +3,12 @@
 **Build Your Bikini. Your Way.** Customize. Mix. Match. Shine.
 
 A customizable swimwear ecommerce site for The Bikini Bar — a build-your-own
-bikini brand with a neon cocktail-bar identity: hot pink script neon,
-amber-gold accents, and a warm midnight backdrop. Structure modeled on
-blookini.com; collections read as house cocktails, the builder as the menu,
-and the cart as your tab. Full identity spec in [BRAND.md](BRAND.md).
+bikini brand with a resort-daylight cocktail-bar identity: shell cream
+backgrounds, palm green anchors, gold charm details, flamingo pink CTAs.
+Structure modeled on blookini.com; collections read as house cocktails, the
+builder as the menu, and the cart as your tab. Identity per the official
+Brand Kit v2.0 — implementation notes in [BRAND.md](BRAND.md), primary logo
+vector in `assets/logo-primary.svg`.
 
 Live site: https://tprawlings-lang.github.io/the-bikini-bar/
 
@@ -20,7 +22,7 @@ Live site: https://tprawlings-lang.github.io/the-bikini-bar/
 | Events | `events.html` | Pop-up calendar and bachelorette inquiry form |
 
 Shared across all pages: sticky header, cart drawer (`Your Tab`) with a
-free-shipping progress bar and upsell, and the neon-trimmed midnight footer.
+free-shipping progress bar and upsell, and the After Dark palm-green footer.
 
 ## Stack
 

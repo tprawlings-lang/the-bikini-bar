@@ -1,112 +1,99 @@
-# The Bikini Bar by Desert Tide — Brand Kit v2
+# The Bikini Bar by Desert Tide — Brand Kit v2.0
 
-**Neon cocktail bar × poolside swimwear.**
+**Resort daylight × cocktail bar.** Customize. Mix. Match. Shine.
 
-Primary brand line: **Customize. Mix. Match. Shine.**
-Secondary line: **Build Your Bikini. Your Way.**
-
-The brand looks and feels like a neon sign on a warm dark wall at a Scottsdale
-pool bar after sundown: hot pink script neon, amber-gold tube accents, coral
-packaging warmth. Shopping the site should feel like ordering at the bar —
-collections are house cocktails, the builder is the menu, the cart is your tab.
+Implementation of the official Brand Kit v2.0 PDF (June 2026). v2 trades the
+neon-noir look for resort daylight: shell cream backgrounds, palm green
+anchors, gold charm details, flamingo pink CTAs. The cocktail bar concept,
+funnel naming, and component architecture are unchanged — only the skin.
 
 ---
 
-## Color System
+## Color System (token names per kit §06)
 
-### Core Palette
+| Token | Color | Hex | Usage |
+| --- | --- | --- | --- |
+| `--bb-neon` | Flamingo Pink | `#FF4FA3` | Primary brand · CTAs · links · active |
+| `--bb-glow` | Petal | `#FFC1D6` | Hovers · light pink surfaces · tints · card borders |
+| `--bb-amber` / `--bb-gold` | Gold | `#D4AF37` | Secondary accent · badges · charms · focus rings |
+| `--bb-ink` | Palm Green | `#0F3D2E` | Text · footer · dark-mode background |
+| `--bb-ink-2` | Dark surface | `#175941` | Cards on Palm Green |
+| `--bb-coral` | Sage | `#6F8F6B` | Borders · icons · secondary text |
+| `--bb-cream` | Shell Cream | `#FFF7ED` | DEFAULT page background |
 
-| Color | Hex | Usage |
-| --- | --- | --- |
-| Midnight | `#170A10` | Main background — warm plum-black, the sign wall |
-| Deep Plum | `#221019` | Cards, drawers, raised surfaces |
-| Velvet | `#2C1520` | Hover and selected surfaces |
-| Neon Pink | `#FF2D88` | Primary neon — logo script, CTAs, glows |
-| Pink Glow | `#FF7AB8` | Soft pink, secondary text, swatch labels |
-| Amber Neon | `#FFB341` | Gold tube — eyebrows, prices, icons, borders |
-| Soft Gold | `#E8A14C` | Dividers, quiet gold details |
-| Coral | `#FF7A66` | Packaging coral, badges, warm accents |
-| Cream | `#FFF3E8` | Primary text on dark |
-| Lime Twist | `#C8FF4D` | After Dark accent — use sparingly |
-| Palm Green | `#1F8A70` | Tropical accents, Signature collection |
+Derived: muted text on cream `#5E6E5B` · petal band `rgba(255,193,214,.35)` ·
+gold divider 1px `#D4AF37` at 60% · sunset gradient `linear-gradient(90deg,#FF4FA3,#D4AF37)`.
 
-### Neon Glow Recipe
-
-Pink text glow: `0 0 6px rgba(255,45,136,.65), 0 0 18px rgba(255,45,136,.45), 0 0 42px rgba(255,45,136,.3)`
-Amber text glow: `0 0 6px rgba(255,179,65,.6), 0 0 16px rgba(255,179,65,.35)`
-
-Glow is the brand's signature — but only on script text, eyebrows, primary
-buttons, and selected states. Body copy and cards stay matte so the neon pops.
+**60/30/10, beach edition:** cream dominates · green grounds · pink pops · gold garnishes.
 
 ## Typography
 
 | Role | Font | Treatment |
 | --- | --- | --- |
-| Script / brand voice | **Mr Dafoe** | Neon-sign script: logo, heroes, collection names, accent words. Always glowing. |
-| Headings & labels | **Montserrat** 700–800 | Uppercase, wide letterspacing (0.14–0.2em) — the "BAR" of the sign |
-| Body | **Inter** | Clean, readable, no tricks |
+| Display / script | **Selima** (self-hosted), fallback **Sacramento** | Hero headlines, section flourishes, 'by' moments. Never under 28px, never body copy. |
+| Headline | **Montserrat 700** | Page titles, nav, product names, buttons. Uppercase labels tracked +0.12em. |
+| Body | **Montserrat 400/500** | Product copy, forms, helper text. 16px base, 1.6 line height. |
 
-Pattern for section headings: Montserrat caps with one script word in neon
-pink — e.g. "ORDER AT *the bar*", "GARNISH *your build*".
+Note: Selima is not on Google Fonts — when the woff2 is sourced, add the
+`@font-face` and the stack `'Selima','Sacramento',cursive` picks it up
+automatically. Sacramento currently renders.
+
+## Components
+
+- **Primary button:** bg `#FF4FA3`, white text 700, pill; hover `#E8418F`, no glow.
+- **Secondary button:** 1.5px Palm Green border, palm text; hover fills palm, cream text.
+- **Tertiary/gold:** gold border or gold underline accents; focus ring 2px `#D4AF37` offset 2 (all modes).
+- **Menu card (product):** white on cream, 1px Petal border, radius 16, Petal image well,
+  price Montserrat 700 in pink; hover `translateY(-4px)` + `0 10px 30px rgba(15,61,46,.12)`.
+- Shadows: soft `0 8px 30px rgba(15,61,46,.10)` · pop `0 6px 20px rgba(255,79,163,.25)`.
+
+## Mode Flip — Poolside is default
+
+- **Poolside (light, DEFAULT):** bg Shell Cream, cards white, text Palm Green, CTA Flamingo Pink.
+- **After Dark (evening accent):** bg Palm Green, surfaces `#175941`, text Shell Cream,
+  accents Gold + Petal. CTA stays pink in both. **The footer is always After Dark.**
+
+## Accessibility (per kit §05)
+
+Pink fails contrast on cream for body text (2.9:1) — pink is **display + buttons
+only**; all reading text on cream is Palm Green (11.5:1 AAA). Sage on cream is
+large text/icons only. Focus rings are gold everywhere.
 
 ## Logo
 
-- **Wordmark:** "The Bikini Bar" in Mr Dafoe, neon pink with glow, gold ✦ charm, "BY DESERT TIDE" in small amber caps beneath/beside.
-- **Sign lockup:** circular gold tube arc + palm tree + bikini + star charm (per the neon sign artwork).
-- Pink-on-dark is primary. Coral-on-cream for daylight packaging (bags, hang tags).
+`assets/logo-primary.svg` — full vector lockup (gold ring, palm, pink script
+"Bikini", BAR caps, bikini icon, star charm, arc tagline, by Desert Tide),
+reconstructed from the delivered source. Uses live text (Selima/Sacramento +
+Montserrat); it's inlined in the homepage hero so page webfonts apply.
+Usage: primary lockup on Shell Cream or white only; never recolor the script
+to gold or green; clear space = height of 'B' in BAR; min width 120px digital.
 
-## Voice — Cocktail Bar Language
+## Voice — unchanged cocktail-bar contract
+
+Tab, close out, on the menu, garnish, last call, happy hour, order's up.
 
 | Location | Copy |
 | --- | --- |
-| Announcement bar | Customize. Mix. Match. Shine. |
-| Hero | Build Your Bikini. Your Way. |
-| Collections section | The Menu / Tonight's pours |
-| Builder | Order at the Bar |
-| Charm step | The garnish. Optional, but highly recommended. |
+| Tagline (footer/packaging) | Build your bikini. Your way. |
+| Brand line | Customize. Mix. Match. Shine. |
 | Cart header | Your Tab |
 | Cart upsell | One more for the road? |
 | Empty cart | Nothing on your tab yet. |
-| Email signup | Get on the list. No cover, first access. |
-| Limited drops | Happy Hour / After Dark |
+| Limited drops | Happy Hour / Last Call / After Dark |
 | Events | Bring the bar to your party. |
 
 ## Collections — The House Menu
 
-| Collection | Label | Mood & Colors |
+| Collection | Label | Tile treatment |
 | --- | --- | --- |
-| Desert Tide Signature | House Pour | Palm green, amber gold, warm dusk |
-| Pink Paloma | Signature Mix | Hot pink on hot pink, flirty |
-| Midnight Margarita | After Dark | Black + lime twist, nightlife drops |
-| Sunset Spritz | Happy Hour | Coral, peach, golden hour |
-| Bride's Last Splash | Bachelorette Special | Pearl white, ivory, gold |
-
-## Buttons
-
-- **Primary:** filled Neon Pink, midnight text, pill, pink glow; glow intensifies on hover.
-- **Secondary:** outlined Amber Neon on transparent; amber glow on hover.
-- **Campaign (After Dark only):** outlined Lime Twist.
-
-All buttons: Montserrat 700, uppercase, 0.12em tracking, pill radius.
+| Desert Tide Signature | House Pour | After Dark: palm green + gold |
+| Pink Paloma | Signature Mix | Petal pink, pink script |
+| Midnight Margarita | After Dark | Deep green `#175941` + sage |
+| Sunset Spritz | Happy Hour | Peach → petal gradient |
+| Bride's Last Splash | Bachelorette Special | White + gold |
 
 ## Builder Color Menu
 
-Piña Cream `#FFF3E8` · Flamingo Pink `#FF2D88` · Pink Paloma `#FF7AB8` ·
-Coral Crush `#FF7A66` · Gold Rush `#FFB341` · Palm Green `#1F8A70` ·
-Lime Twist `#C8FF4D` · Tide Pool Teal `#1EB6A7` · Midnight Black `#181018`
-
-## Imagery Direction
-
-- Neon signage at dusk, pool decks after sundown, string lights
-- Coral drawstring bags and hang tags in golden-hour daylight (the packaging counterpoint to the dark site)
-- Charm and hardware close-ups with warm glints
-- Bachelorette groups, cabanas, frozen drinks
-- Avoid: cold blue beach imagery, daytime-surf styling, flat white studio shots
-
-## Do / Don't
-
-- **Do** keep glow selective — one glowing element per zone.
-- **Do** pair every dark section with amber or pink warmth; never flat gray-black.
-- **Don't** set body copy in script or in neon colors.
-- **Don't** use lime outside After Dark moments.
-- **Don't** let it read as a nightclub — it's a *pool* bar: warm, social, feminine.
+Shell Cream `#FFF7ED` · Petal Pink `#FFC1D6` · Flamingo Pink `#FF4FA3` ·
+Coral Crush `#FF6F61` · Gold Rush `#D4AF37` · Salted Sage `#6F8F6B` ·
+Palm Green `#0F3D2E` · Tide Pool Teal `#1EB6A7` · After Dark `#1C1014`

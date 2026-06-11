@@ -7,7 +7,8 @@
   <meta name="description" content="The Bikini Bar by Desert Tide. Customize. Mix. Match. Shine. Build your bikini your way — tops, bottoms, colors, and charms, served poolside." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Montserrat:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-primary.svg" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -35,12 +36,69 @@
     </div>
   </header>
 
-  <!-- Hero — the neon sign -->
+  <!-- Hero — the primary lockup -->
   <section class="hero">
     <div class="container">
-      <p class="hero-the">The Bikini Bar</p>
-      <h1>Build Your Bikini.<br /><span class="flicker">Your Way.</span></h1>
-      <p class="subheadline">Pick your top. Mix your bottom. Add your charms. <span class="script">Served poolside.</span></p>
+      <div class="hero-logo" aria-label="The Bikini Bar by Desert Tide — Customize. Mix. Match. Shine.">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720">
+          <defs>
+            <style>
+              .lg-script { font-family: 'Selima','Sacramento',cursive; fill:#FF4FA3; }
+              .lg-caps   { font-family: 'Montserrat',sans-serif; font-weight:700; fill:#FF4FA3; }
+              .lg-tag    { font-family: 'Montserrat',sans-serif; font-weight:500; fill:#0F3D2E; }
+              .lg-gold   { stroke:#D4AF37; fill:none; stroke-linecap:round; }
+              .lg-pinkln { stroke:#FF4FA3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+            </style>
+            <path id="tagArc" d="M 139 415 A 200 200 0 0 0 501 415" fill="none"/>
+          </defs>
+          <path class="lg-gold" stroke-width="4" d="M 419 117 A 235 235 0 1 0 533 231" />
+          <g stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M 492 268 C 500 220 510 180 530 142" stroke="#D4AF37"/>
+            <path d="M 506 268 C 514 222 522 184 540 148" stroke="#D4AF37"/>
+            <line x1="497" y1="246" x2="511" y2="249" stroke="#D4AF37" stroke-width="3.5"/>
+            <line x1="502" y1="222" x2="516" y2="226" stroke="#D4AF37" stroke-width="3.5"/>
+            <line x1="508" y1="198" x2="521" y2="203" stroke="#D4AF37" stroke-width="3.5"/>
+            <line x1="515" y1="174" x2="528" y2="180" stroke="#D4AF37" stroke-width="3.5"/>
+            <path d="M 535 140 C 500 110 460 100 420 108 C 462 116 498 132 535 140 Z" fill="#0F3D2E" stroke="none"/>
+            <path d="M 535 140 C 505 98 472 78 432 72 C 470 92 506 116 535 140 Z" fill="#6F8F6B" stroke="none"/>
+            <path d="M 535 140 C 528 96 540 58 568 32 C 548 70 540 106 535 140 Z" fill="#0F3D2E" stroke="none"/>
+            <path d="M 535 140 C 566 102 604 86 640 88 C 602 102 566 122 535 140 Z" fill="#6F8F6B" stroke="none"/>
+            <path d="M 535 140 C 572 124 610 124 638 138 C 602 138 566 140 535 140 Z" fill="#0F3D2E" stroke="none"/>
+            <path d="M 535 140 C 568 152 594 174 606 204 C 580 180 556 160 535 140 Z" fill="#0F3D2E" stroke="none"/>
+            <circle cx="528" cy="148" r="7" fill="#D4AF37" stroke="none"/>
+            <circle cx="544" cy="152" r="7" fill="#D4AF37" stroke="none"/>
+          </g>
+          <text class="lg-caps" x="320" y="170" font-size="30" letter-spacing="14" text-anchor="middle">THE</text>
+          <text class="lg-script" x="320" y="295" font-size="132" text-anchor="middle">Bikini</text>
+          <text class="lg-caps" x="320" y="384" font-size="64" letter-spacing="26" text-anchor="middle">BAR</text>
+          <g class="lg-pinkln" stroke-width="5" transform="translate(68,94) scale(0.58)">
+            <path d="M 150 430 C 158 452 166 470 172 484"/>
+            <path d="M 214 430 C 206 452 198 470 192 484"/>
+            <circle cx="182" cy="427" r="5"/>
+            <path d="M 146 492 C 154 470 170 460 182 472 C 176 488 164 498 150 500 Z"/>
+            <path d="M 218 492 C 210 470 194 460 182 472 C 188 488 200 498 214 500 Z"/>
+            <path d="M 150 500 L 132 506"/>
+            <path d="M 214 500 L 232 506"/>
+            <path d="M 138 530 L 226 530 C 218 556 200 574 182 580 C 164 574 146 556 138 530 Z"/>
+            <path d="M 132 526 C 122 518 118 530 128 534 C 118 538 122 548 132 540"/>
+            <path d="M 232 526 C 242 518 246 530 236 534 C 246 538 242 548 232 540"/>
+          </g>
+          <g class="lg-gold" stroke-width="5" transform="translate(184,140) scale(0.6)">
+            <path d="M 452 420 C 452 436 452 448 452 458"/>
+            <circle cx="452" cy="414" r="7"/>
+            <path d="M 452 458 L 462 480 L 486 483 L 469 500 L 473 524 L 452 512 L 431 524 L 435 500 L 418 483 L 442 480 Z"/>
+          </g>
+          <text class="lg-tag" font-size="18" letter-spacing="4.5">
+            <textPath href="#tagArc" startOffset="50%" text-anchor="middle">CUSTOMIZE. MIX. MATCH. SHINE.</textPath>
+          </text>
+          <text class="lg-script" x="320" y="628" font-size="46" text-anchor="middle">by</text>
+          <line class="lg-gold" x1="108" y1="672" x2="166" y2="672" stroke-width="3"/>
+          <text class="lg-caps" x="320" y="680" font-size="24" letter-spacing="10" text-anchor="middle">DESERT TIDE</text>
+          <line class="lg-gold" x1="474" y1="672" x2="532" y2="672" stroke-width="3"/>
+        </svg>
+      </div>
+      <h1>Build Your Bikini. Your Way.</h1>
+      <p class="subheadline">Pick your top. Mix your bottom. Add your charms. Served poolside.</p>
       <div class="hero-buttons">
         <a class="button-primary" href="builder.html">Start Building</a>
         <a class="button-secondary" href="index.html#collections">See the Menu</a>
@@ -118,7 +176,7 @@
         <a class="collection-tile tile-margarita" href="shop.html?collection=margarita">
           <p class="tile-label">After Dark</p>
           <h3>Midnight Margarita</h3>
-          <p>Black bikinis with a lime twist. For the pool after sundown.</p>
+          <p>Deep greens with a salted sage twist. For the pool after sundown.</p>
         </a>
         <a class="collection-tile tile-spritz" href="shop.html?collection=spritz">
           <p class="tile-label">Happy Hour</p>
@@ -138,7 +196,7 @@
   <section class="section charm-bar-section">
     <div class="container">
       <span class="eyebrow">The Charm Bar</span>
-      <h2 style="font-size: var(--font-size-h2); margin: 14px 0;">Garnish <span class="script neon-pink">your build</span></h2>
+      <h2 style="font-size: var(--font-size-h2); margin: 14px 0;">Garnish <span class="script">your build</span></h2>
       <p class="accent-line">Add the details that make it yours.</p>
       <div class="charm-row">
         <span class="charm-chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 5.1L19.5 9l-4 3.8 1.2 5.4L12 15.4l-4.7 2.8 1.2-5.4-4-3.8 5.4-.9z"/></svg> Gold Star</span>
@@ -169,7 +227,7 @@
   <section class="section ivory">
     <div class="container" style="text-align:center;">
       <span class="eyebrow">The List</span>
-      <h2 style="font-size: var(--font-size-h2); margin: 14px 0;">Get on <span class="script neon-pink">the list</span></h2>
+      <h2 style="font-size: var(--font-size-h2); margin: 14px 0;">Get on <span class="script">the list</span></h2>
       <p style="opacity:0.85;">First access to drops, charms, and pop-ups. No cover.</p>
       <form class="signup-form">
         <input type="email" placeholder="Your email" required />
@@ -184,8 +242,8 @@
       <div class="footer-grid">
         <div>
           <p class="logo">The Bikini Bar <span class="charm">&#10022;</span></p>
-          <p class="logo byline" style="font-family: var(--font-heading); font-size: 0.65rem; letter-spacing: 0.22em; color: var(--color-amber-neon); text-shadow: none; margin-bottom: 14px;">BY DESERT TIDE</p>
-          <p class="tagline">Customize. Mix. Match. Shine.</p>
+          <p class="byline-row">By Desert Tide</p>
+          <p class="tagline">Build your bikini. Your way.</p>
           <a class="button-secondary" href="builder.html" style="margin-top:20px;">Build Your Bikini</a>
         </div>
         <div>
