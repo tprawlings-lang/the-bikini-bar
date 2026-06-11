@@ -19,7 +19,7 @@ const Cart = {
     const items = Cart.read();
     items.push({ id: Date.now() + Math.random(), ...item });
     Cart.write(items);
-    showToast(item.name + " added to your build");
+    showToast(item.name + " added to your tab");
     openCart();
   },
   remove(id) {
@@ -46,8 +46,8 @@ function renderCart() {
   if (items.length === 0) {
     list.innerHTML =
       '<div class="cart-empty">' +
-      '<p class="accent-line">Your bikini build is waiting.</p>' +
-      '<p style="margin:14px 0 22px;">Pick your top, match your bottom, add your charms.</p>' +
+      '<p class="accent-line">Nothing on your tab yet.</p>' +
+      '<p style="margin:14px 0 22px;">Pick your top, mix your bottom, add your charms.</p>' +
       '<a class="button-primary" href="builder.html">Start Building</a>' +
       "</div>";
   } else {
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const input = form.querySelector("input[type=email]");
       if (input?.value) {
-        showToast("You're on the list. First access is yours.");
+        showToast("You're on the list. No cover, first access.");
         input.value = "";
       }
     });

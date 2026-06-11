@@ -9,37 +9,38 @@ const ICONS = {
 };
 
 const PRODUCTS = [
-  { name: "Cactus Green Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["desert-luxe", "scottsdale"], icon: "top", bg: "#0F5132", swatches: ["#0F5132", "#006B4F", "#F6EFE3"] },
-  { name: "Desert Tan Bandeau Top", price: 39.99, type: "tops", section: "Top", collections: ["desert-luxe"], icon: "top", bg: "#D9B98F", swatches: ["#D9B98F", "#B88746", "#FFF9F0"] },
-  { name: "Leopard Halter Top", price: 42.99, type: "tops", section: "Top", collections: ["wild-print"], icon: "top", bg: "#3a2d1c", badge: "Bold", swatches: ["#3a2d1c", "#C8A24A", "#111111"] },
-  { name: "Zebra Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["wild-print"], icon: "top", bg: "#111111", swatches: ["#111111", "#FFF9F0"] },
-  { name: "Neon Pink Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["neon-nights"], icon: "top", bg: "#FF2DAA", badge: "Limited Drop", badgeClass: "neon", swatches: ["#FF2DAA", "#B6FF00", "#111111"] },
-  { name: "Ivory Bride Bandeau Top", price: 42.99, type: "tops", section: "Top", collections: ["bridal"], icon: "top", bg: "#C8A24A", swatches: ["#FFF9F0", "#C8A24A"] },
-  { name: "Turquoise Halter Top", price: 42.99, type: "tops", section: "Top", collections: ["scottsdale"], icon: "top", bg: "#1EB6A7", swatches: ["#1EB6A7", "#0F5132", "#C8A24A"] },
+  { name: "Palm Green Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["signature"], icon: "top", bg: "#1F8A70", swatches: ["#1F8A70", "#FFB341", "#FFF3E8"] },
+  { name: "Gold Rush Bandeau Top", price: 39.99, type: "tops", section: "Top", collections: ["signature"], icon: "top", bg: "#FFB341", swatches: ["#FFB341", "#E8A14C", "#FFF3E8"] },
+  { name: "Flamingo Pink Halter Top", price: 42.99, type: "tops", section: "Top", collections: ["paloma"], icon: "top", bg: "#FF2D88", badge: "Signature Mix", swatches: ["#FF2D88", "#FF7AB8", "#FFF3E8"] },
+  { name: "Pink Paloma Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["paloma"], icon: "top", bg: "#FF7AB8", swatches: ["#FF7AB8", "#FF2D88"] },
+  { name: "Midnight Triangle Top", price: 39.99, type: "tops", section: "Top", collections: ["margarita"], icon: "top", bg: "#C8FF4D", badge: "After Dark", badgeClass: "neon", swatches: ["#181018", "#C8FF4D"] },
+  { name: "Pearl Bride Bandeau Top", price: 42.99, type: "tops", section: "Top", collections: ["bridal"], icon: "top", bg: "#FFF3E8", swatches: ["#FFF3E8", "#FFB341"] },
+  { name: "Coral Crush Halter Top", price: 42.99, type: "tops", section: "Top", collections: ["spritz"], icon: "top", bg: "#FF7A66", badge: "Happy Hour", swatches: ["#FF7A66", "#FFB341", "#FFF3E8"] },
 
-  { name: "Cactus Green Tie-Side Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["desert-luxe", "scottsdale"], icon: "bottom", bg: "#0F5132", swatches: ["#0F5132", "#006B4F", "#F6EFE3"] },
-  { name: "Desert Tan Cheeky Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["desert-luxe"], icon: "bottom", bg: "#D9B98F", swatches: ["#D9B98F", "#B88746"] },
-  { name: "Leopard Tie-Side Bottom", price: 42.99, type: "bottoms", section: "Bottom", collections: ["wild-print"], icon: "bottom", bg: "#3a2d1c", swatches: ["#3a2d1c", "#C8A24A"] },
-  { name: "Neon Lime Cheeky Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["neon-nights"], icon: "bottom", bg: "#7da300", badge: "Limited Drop", badgeClass: "neon", swatches: ["#B6FF00", "#FF2DAA", "#111111"] },
-  { name: "Ivory Bride High-Waist Bottom", price: 44.99, type: "bottoms", section: "Bottom", collections: ["bridal"], icon: "bottom", bg: "#C8A24A", swatches: ["#FFF9F0", "#C8A24A"] },
-  { name: "Pool Coral Classic Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["scottsdale"], icon: "bottom", bg: "#FF6F61", badge: "Summer", swatches: ["#FF6F61", "#1EB6A7", "#F6EFE3"] },
+  { name: "Palm Green Tie-Side Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["signature"], icon: "bottom", bg: "#1F8A70", swatches: ["#1F8A70", "#FFB341", "#FFF3E8"] },
+  { name: "Gold Rush Cheeky Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["signature"], icon: "bottom", bg: "#FFB341", swatches: ["#FFB341", "#E8A14C"] },
+  { name: "Flamingo Pink Tie-Side Bottom", price: 42.99, type: "bottoms", section: "Bottom", collections: ["paloma"], icon: "bottom", bg: "#FF2D88", swatches: ["#FF2D88", "#FF7AB8"] },
+  { name: "Lime Twist Cheeky Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["margarita"], icon: "bottom", bg: "#C8FF4D", badge: "After Dark", badgeClass: "neon", swatches: ["#C8FF4D", "#181018"] },
+  { name: "Pearl Bride High-Waist Bottom", price: 44.99, type: "bottoms", section: "Bottom", collections: ["bridal"], icon: "bottom", bg: "#FFF3E8", swatches: ["#FFF3E8", "#FFB341"] },
+  { name: "Coral Crush Classic Bottom", price: 39.99, type: "bottoms", section: "Bottom", collections: ["spritz"], icon: "bottom", bg: "#FF7A66", badge: "Happy Hour", swatches: ["#FF7A66", "#FFB341"] },
 
-  { name: "Gold Shimmer Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["desert-luxe"], icon: "ties", bg: "#B88746", swatches: ["#C8A24A", "#B88746"] },
-  { name: "Emerald Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["desert-luxe", "scottsdale"], icon: "ties", bg: "#006B4F", swatches: ["#006B4F", "#0F5132"] },
-  { name: "Zebra Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["wild-print"], icon: "ties", bg: "#111111", swatches: ["#111111", "#FFF9F0"] },
-  { name: "Neon Pink Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["neon-nights"], icon: "ties", bg: "#FF2DAA", swatches: ["#FF2DAA", "#B6FF00"] },
-  { name: "Pearl White Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["bridal"], icon: "ties", bg: "#C8A24A", swatches: ["#FFF9F0", "#C8A24A"] },
+  { name: "Gold Shimmer Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["signature"], icon: "ties", bg: "#FFB341", swatches: ["#FFB341", "#E8A14C"] },
+  { name: "Palm Green Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["signature"], icon: "ties", bg: "#1F8A70", swatches: ["#1F8A70", "#FFB341"] },
+  { name: "Hot Pink Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["paloma"], icon: "ties", bg: "#FF2D88", swatches: ["#FF2D88", "#FF7AB8"] },
+  { name: "Lime Twist Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["margarita"], icon: "ties", bg: "#C8FF4D", swatches: ["#C8FF4D", "#181018"] },
+  { name: "Pearl White Ties (2)", price: 10.0, type: "ties", section: "Ties", collections: ["bridal"], icon: "ties", bg: "#FFF3E8", swatches: ["#FFF3E8", "#FFB341"] },
 
-  { name: "Gold Star Charm", price: 4.0, type: "charms", section: "Charms", collections: ["desert-luxe", "wild-print"], icon: "charm", bg: "#C8A24A" },
-  { name: "Mini Cactus Charm", price: 4.0, type: "charms", section: "Charms", collections: ["scottsdale"], icon: "charm", bg: "#0F5132" },
-  { name: "Pearl Drop Charm", price: 5.0, type: "charms", section: "Charms", collections: ["bridal"], icon: "charm", bg: "#D9B98F", badge: "Bride Fave" },
-  { name: "Martini Charm", price: 5.0, type: "charms", section: "Charms", collections: ["neon-nights", "scottsdale"], icon: "charm", bg: "#1EB6A7" },
-  { name: "Letter Charm", price: 4.0, type: "charms", section: "Charms", collections: ["bridal", "wild-print"], icon: "charm", bg: "#B88746" },
-  { name: "Heart Charm", price: 4.0, type: "charms", section: "Charms", collections: ["bridal", "neon-nights"], icon: "charm", bg: "#FF6F61" },
+  { name: "Gold Star Charm", price: 4.0, type: "charms", section: "Charms", collections: ["signature", "paloma"], icon: "charm", bg: "#FFB341" },
+  { name: "Palm Tree Charm", price: 4.0, type: "charms", section: "Charms", collections: ["signature"], icon: "charm", bg: "#1F8A70" },
+  { name: "Martini Charm", price: 5.0, type: "charms", section: "Charms", collections: ["margarita", "spritz"], icon: "charm", bg: "#C8FF4D" },
+  { name: "Cherry Charm", price: 4.0, type: "charms", section: "Charms", collections: ["spritz", "paloma"], icon: "charm", bg: "#FF7A66" },
+  { name: "Pearl Drop Charm", price: 5.0, type: "charms", section: "Charms", collections: ["bridal"], icon: "charm", bg: "#FFF3E8", badge: "Bride Fave" },
+  { name: "Letter Charm", price: 4.0, type: "charms", section: "Charms", collections: ["bridal", "paloma"], icon: "charm", bg: "#FF7AB8" },
+  { name: "Heart Charm", price: 4.0, type: "charms", section: "Charms", collections: ["bridal", "spritz"], icon: "charm", bg: "#FF2D88" },
 
-  { name: "String Weaving Tool", price: 4.0, type: "accessories", section: "Accessories", collections: [], icon: "accessory", bg: "#B88746" },
-  { name: "Poolside Scrunchie", price: 8.0, type: "accessories", section: "Accessories", collections: ["desert-luxe"], icon: "accessory", bg: "#D9B98F" },
-  { name: "The Bikini Bar Gift Card", price: 25.0, type: "accessories", section: "Accessories", collections: [], icon: "accessory", bg: "#0F5132", badge: "Gift" },
+  { name: "String Weaving Tool", price: 4.0, type: "accessories", section: "Accessories", collections: [], icon: "accessory", bg: "#E8A14C" },
+  { name: "Poolside Scrunchie", price: 8.0, type: "accessories", section: "Accessories", collections: ["spritz"], icon: "accessory", bg: "#FF7A66" },
+  { name: "The Bikini Bar Gift Card", price: 25.0, type: "accessories", section: "Accessories", collections: [], icon: "accessory", bg: "#FF2D88", badge: "Gift" },
 ];
 
 function productCard(p) {
@@ -51,7 +52,7 @@ function productCard(p) {
     : "";
   return (
     '<div class="product-card">' +
-    '<div class="product-image" style="background: linear-gradient(160deg, ' + p.bg + '22, ' + p.bg + '55); color:' + p.bg + ';">' +
+    '<div class="product-image" style="background: radial-gradient(ellipse at 50% 35%, ' + p.bg + '3D, transparent 75%); color:' + p.bg + ';">' +
     badge + ICONS[p.icon] +
     "</div>" +
     '<div class="product-info">' +
@@ -72,7 +73,7 @@ function renderShop(filter) {
   });
   grid.innerHTML = visible.length
     ? visible.map(productCard).join("")
-    : '<p class="accent-line">Nothing here yet. New drops are coming.</p>';
+    : '<p class="accent-line">Nothing on the menu yet. New pours are coming.</p>';
 }
 
 document.addEventListener("DOMContentLoaded", () => {

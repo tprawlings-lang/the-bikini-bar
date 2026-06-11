@@ -1,11 +1,14 @@
-# The Bikini Bar
+# The Bikini Bar by Desert Tide
 
-**Build Your Bikini.** Mix. Match. Charm. Repeat.
+**Build Your Bikini. Your Way.** Customize. Mix. Match. Shine.
 
 A customizable swimwear ecommerce site for The Bikini Bar — a build-your-own
-bikini brand made for pool days, vacations, bachelorette trips, and
-Scottsdale-style social shopping. Structure modeled on blookini.com, with
-The Bikini Bar brand identity applied throughout.
+bikini brand with a neon cocktail-bar identity: hot pink script neon,
+amber-gold accents, and a warm midnight backdrop. Structure modeled on
+blookini.com; collections read as house cocktails, the builder as the menu,
+and the cart as your tab. Full identity spec in [BRAND.md](BRAND.md).
+
+Live site: https://tprawlings-lang.github.io/the-bikini-bar/
 
 ## Pages
 
@@ -16,8 +19,8 @@ The Bikini Bar brand identity applied throughout.
 | Shop | `shop.html` | Product grid with type + collection filters (`?collection=` deep links supported) |
 | Events | `events.html` | Pop-up calendar and bachelorette inquiry form |
 
-Shared across all pages: sticky header, cart drawer (`Your Bikini Build`)
-with a free-shipping progress bar and upsell, and the cactus-green footer.
+Shared across all pages: sticky header, cart drawer (`Your Tab`) with a
+free-shipping progress bar and upsell, and the neon-trimmed midnight footer.
 
 ## Stack
 
@@ -37,6 +40,6 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Collections
+## Collections — The House Menu
 
-Desert Luxe · Wild Print · Neon Nights · Bridal Pool Party · Scottsdale Edit
+Desert Tide Signature · Pink Paloma · Midnight Margarita · Sunset Spritz · Bride's Last Splash

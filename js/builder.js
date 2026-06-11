@@ -14,25 +14,25 @@ const BUILDER = {
     { id: "classic", name: "Classic Bottom", price: 39.99 },
   ],
   colors: [
-    { id: "sand-cream", name: "Sand Cream", hex: "#F6EFE3" },
-    { id: "cactus-green", name: "Cactus Green", hex: "#0F5132" },
-    { id: "emerald", name: "Emerald", hex: "#006B4F" },
-    { id: "desert-tan", name: "Desert Tan", hex: "#D9B98F" },
-    { id: "bronze", name: "Soft Bronze", hex: "#B88746" },
-    { id: "black", name: "Black", hex: "#111111" },
-    { id: "neon-pink", name: "Neon Pink", hex: "#FF2DAA" },
-    { id: "pool-coral", name: "Pool Coral", hex: "#FF6F61" },
-    { id: "turquoise", name: "Turquoise", hex: "#1EB6A7" },
+    { id: "pina-cream", name: "Piña Cream", hex: "#FFF3E8" },
+    { id: "flamingo-pink", name: "Flamingo Pink", hex: "#FF2D88" },
+    { id: "pink-paloma", name: "Pink Paloma", hex: "#FF7AB8" },
+    { id: "coral-crush", name: "Coral Crush", hex: "#FF7A66" },
+    { id: "gold-rush", name: "Gold Rush", hex: "#FFB341" },
+    { id: "palm-green", name: "Palm Green", hex: "#1F8A70" },
+    { id: "lime-twist", name: "Lime Twist", hex: "#C8FF4D" },
+    { id: "tide-pool", name: "Tide Pool Teal", hex: "#1EB6A7" },
+    { id: "midnight-black", name: "Midnight Black", hex: "#181018" },
   ],
   charms: [
     { id: "gold-star", name: "Gold Star", price: 4.0 },
-    { id: "heart", name: "Heart Charm", price: 4.0 },
-    { id: "shell", name: "Shell", price: 4.0 },
-    { id: "cactus", name: "Mini Cactus", price: 4.0 },
+    { id: "palm-tree", name: "Palm Tree", price: 4.0 },
     { id: "martini", name: "Martini", price: 5.0 },
+    { id: "cherry", name: "Cherry", price: 4.0 },
+    { id: "heart", name: "Heart Charm", price: 4.0 },
     { id: "letter", name: "Letter Charm", price: 4.0 },
     { id: "pearl", name: "Pearl Drop", price: 5.0 },
-    { id: "sun", name: "Sun Charm", price: 4.0 },
+    { id: "disco-ball", name: "Disco Ball", price: 5.0 },
   ],
 };
 
@@ -95,11 +95,11 @@ function updateUI() {
 
   if (build.color) {
     const stage = document.getElementById("preview-stage");
-    stage.style.background = build.color.hex + "33";
-    document.getElementById("preview-icon").setAttribute(
-      "stroke",
-      build.color.id === "sand-cream" ? "#B88746" : build.color.hex
-    );
+    stage.style.background = build.color.hex + "26";
+    const icon = document.getElementById("preview-icon");
+    const stroke = build.color.id === "midnight-black" ? "#FF7AB8" : build.color.hex;
+    icon.setAttribute("stroke", stroke);
+    icon.style.filter = "drop-shadow(0 0 8px " + stroke + "80)";
   }
 
   document.querySelector('[data-step="top"]').classList.toggle("done", !!build.top);
@@ -143,7 +143,7 @@ function addBuildToCart() {
   build.charms.forEach((c) =>
     Cart.add({ name: c.name, price: c.price, section: "Charms", detail: "Charm Bar" })
   );
-  showToast("Your bikini build is in the bag");
+  showToast("Your build is on the tab");
 }
 
 document.addEventListener("DOMContentLoaded", () => {

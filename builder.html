@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Your Bikini — The Bikini Bar</title>
-  <meta name="description" content="Build your bikini at The Bikini Bar. Choose your top, pick your bottom, choose your color, add charms, and review your build." />
+  <title>Build Your Bikini — The Bikini Bar by Desert Tide</title>
+  <meta name="description" content="Order at the bar: choose your top, pick your bottom, choose your color, add charms, and review your build." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Montserrat:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="has-sticky-cta">
 
-  <div class="announcement-bar">Mix. Match. Charm. Repeat. <span class="gold">&#10022;</span> Free shipping on builds over $100</div>
+  <div class="announcement-bar">Customize. Mix. Match. Shine. <span class="gold">&#10022;</span> Free shipping on builds over $100</div>
 
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="index.html">The Bikini Bar <span class="charm">&#10022;</span></a>
+      <a class="logo" href="index.html">The Bikini Bar <span class="charm">&#10022;</span> <span class="byline">by Desert Tide</span></a>
       <nav class="main-nav">
         <a class="nav-cta" href="builder.html">Build Your Bikini</a>
         <a href="shop.html">Shop</a>
-        <a href="index.html#collections">Collections</a>
+        <a href="index.html#collections">The Menu</a>
         <a href="events.html">Events</a>
       </nav>
       <div class="header-actions">
-        <button class="cart-button" aria-label="Open cart">
+        <button class="cart-button" aria-label="Open your tab">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1.5 13.5a1 1 0 0 1-1 1.1H5.5a1 1 0 0 1-1-1.1L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
           <span class="cart-count">0</span>
         </button>
@@ -37,9 +37,9 @@
 
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">The Styling Bar</span>
+      <span class="eyebrow">Order at the Bar</span>
       <h1>Build Your Bikini</h1>
-      <p>Pick your top, match your bottom, add your charms, and make it yours.</p>
+      <p>Pick your top. Mix your bottom. Add your charms. Make it yours.</p>
     </div>
   </section>
 
@@ -48,8 +48,8 @@
 
       <!-- Live Preview -->
       <aside class="builder-preview">
-        <div class="preview-stage" id="preview-stage" style="background: var(--color-sand-cream);">
-          <svg id="preview-icon" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="#0F5132" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round">
+        <div class="preview-stage" id="preview-stage">
+          <svg id="preview-icon" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="#FF2D88" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 8px rgba(255,45,136,0.5));">
             <path d="M5 3l3 6.5h2L12 4l2 5.5h2L19 3M8 9.5C8 12 9.7 13.5 12 13.5S16 12 16 9.5"/>
             <path d="M5.5 16h13l-4.5 5.5h-4L5.5 16zM5.5 16 4 14M18.5 16l1.5-2"/>
           </svg>
@@ -61,8 +61,8 @@
           <li><span class="label">Charms</span><span id="summary-charms">—</span></li>
         </ul>
         <div class="build-total"><span>Your Build</span><span id="build-total">$0.00</span></div>
-        <button class="button-primary" id="add-build" style="width:100%; margin-top:18px;" disabled>Add Full Build to Cart</button>
-        <p class="accent-line" style="margin-top: 14px; font-size: 0.95rem;">Add the details that make it yours.</p>
+        <button class="button-primary" id="add-build" style="width:100%; margin-top:18px;" disabled>Add Full Build to Tab</button>
+        <p class="accent-line" style="margin-top: 16px; font-size: 1.2rem;">Add the details that make it yours.</p>
       </aside>
 
       <!-- Steps -->
@@ -96,15 +96,15 @@
         <div class="builder-step">
           <p class="step-number">Step 4</p>
           <h2>Add Charms</h2>
-          <p class="accent-line" style="margin: -8px 0 16px;">Optional, but highly recommended.</p>
+          <p class="accent-line" style="margin: -8px 0 16px;">The garnish. Optional, but highly recommended.</p>
           <div class="option-grid" id="charm-options"></div>
         </div>
 
         <div class="builder-step">
           <p class="step-number">Step 5</p>
           <h2>Review Your Build</h2>
-          <p id="review-text" style="margin-bottom: 18px;">Make your picks above and your build will come together here.</p>
-          <button class="button-primary" id="add-build-bottom" disabled>Add Full Build to Cart</button>
+          <p id="review-text" style="margin-bottom: 18px; opacity: 0.85;">Make your picks above and your build will come together here.</p>
+          <button class="button-primary" id="add-build-bottom" disabled>Add Full Build to Tab</button>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
   <!-- Sticky mobile CTA -->
   <div class="sticky-cta">
     <span class="sticky-total" id="sticky-total">$0.00</span>
-    <button class="button-primary" id="add-build-sticky" disabled>Add Full Build to Cart</button>
+    <button class="button-primary" id="add-build-sticky" disabled>Add Full Build to Tab</button>
   </div>
 
   <!-- Footer -->
@@ -122,8 +122,9 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <p class="logo">The Bikini Bar <span class="charm" style="color: var(--color-metallic-gold);">&#10022;</span></p>
-          <p class="tagline">Mix. Match. Charm. Repeat.</p>
+          <p class="logo">The Bikini Bar <span class="charm">&#10022;</span></p>
+          <p style="font-family: var(--font-heading); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.22em; color: var(--color-amber-neon); margin-bottom: 14px;">BY DESERT TIDE</p>
+          <p class="tagline">Customize. Mix. Match. Shine.</p>
         </div>
         <div>
           <h4>Shop</h4>
@@ -143,16 +144,16 @@
           </ul>
         </div>
         <div>
-          <h4>Get first access</h4>
-          <p style="font-size: var(--font-size-small);">Get first access to drops, charms, and pop-ups.</p>
+          <h4>Get on the list</h4>
+          <p style="font-size: var(--font-size-small); opacity: 0.85;">First access to drops, charms, and pop-ups.</p>
           <form class="signup-form" style="margin-top: 16px;">
             <input type="email" placeholder="Your email" required />
-            <button class="button-primary" type="submit" style="background: var(--color-metallic-gold); border-color: var(--color-metallic-gold); color: var(--color-black);">Join</button>
+            <button class="button-primary" type="submit">Join</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 The Bikini Bar. Scottsdale, AZ.</p>
+        <p>&copy; 2026 The Bikini Bar by Desert Tide. Scottsdale, AZ.</p>
         <div class="social-links">
           <a href="#">Instagram</a>
           <a href="#">TikTok</a>
@@ -161,12 +162,12 @@
     </div>
   </footer>
 
-  <!-- Cart Drawer -->
+  <!-- Cart Drawer — Your Tab -->
   <div class="cart-overlay"></div>
-  <aside class="cart-drawer" aria-label="Cart">
+  <aside class="cart-drawer" aria-label="Your tab">
     <div class="cart-header">
-      <h3>Your Bikini Build</h3>
-      <button class="cart-close" aria-label="Close cart">&#10005;</button>
+      <h3>Your Tab</h3>
+      <button class="cart-close" aria-label="Close tab">&#10005;</button>
     </div>
     <div class="shipping-bar">
       <span class="ship-label">$100.00 away from free shipping</span>
@@ -174,8 +175,8 @@
     </div>
     <div class="cart-items"></div>
     <div class="cart-upsell">
-      <strong>Finish the look.</strong><br />
-      Add charms, ties, or poolside extras before checkout.
+      <strong>One more for the road?</strong><br />
+      Add charms, ties, or poolside extras before you close out.
     </div>
     <div class="cart-footer">
       <div class="cart-total"><span>Total</span><span class="cart-total-amount">$0.00</span></div>
