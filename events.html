@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events &amp; Pop-Ups — The Bikini Bar</title>
+  <meta name="description" content="Bring The Bikini Bar to your party. Pop-ups, resort events, and bachelorette bikini-building experiences in Scottsdale and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="announcement-bar">Mix. Match. Charm. Repeat. <span class="gold">&#10022;</span> Free shipping on builds over $100</div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">The Bikini Bar <span class="charm">&#10022;</span></a>
+      <nav class="main-nav">
+        <a class="nav-cta" href="builder.html">Build Your Bikini</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="events.html">Events</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-button" aria-label="Open cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1.5 13.5a1 1 0 0 1-1 1.1H5.5a1 1 0 0 1-1-1.1L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Pop-Ups &amp; Parties</span>
+      <h1>Bring The Bikini Bar to your party.</h1>
+      <p>Pop-ups, resort takeovers, and bachelorette bikini-building experiences. We bring the bar — tops, bottoms, ties, charms, and all.</p>
+    </div>
+  </section>
+
+  <!-- Upcoming Pop-Ups -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">On the Calendar</span>
+        <h2>Upcoming Pop-Ups</h2>
+        <p>Open to the public. Come build a bikini with us.</p>
+      </div>
+      <div class="event-list">
+        <div class="event-card">
+          <p class="event-date">Jun 27</p>
+          <div class="event-meta">
+            <h3>The Bikini Bar x The Sands Resort</h3>
+            <p class="event-location">Poolside Cabana Row &middot; Scottsdale, AZ &middot; 11am&ndash;4pm</p>
+          </div>
+          <a class="button-secondary" href="#">RSVP</a>
+        </div>
+        <div class="event-card">
+          <p class="event-date">Jul 11</p>
+          <div class="event-meta">
+            <h3>Neon Nights Pool Party</h3>
+            <p class="event-location">Old Town Scottsdale &middot; 7pm&ndash;Late &middot; Limited Drop on site</p>
+          </div>
+          <a class="button-campaign" href="#">Get on the List</a>
+        </div>
+        <div class="event-card">
+          <p class="event-date">Jul 25</p>
+          <div class="event-meta">
+            <h3>Charm Bar Saturday</h3>
+            <p class="event-location">Fashion Square &middot; Scottsdale, AZ &middot; 12pm&ndash;5pm</p>
+          </div>
+          <a class="button-secondary" href="#">RSVP</a>
+        </div>
+        <div class="event-card">
+          <p class="event-date">Aug 8</p>
+          <div class="event-meta">
+            <h3>The Bikini Bar x Desert Luxe Resort Weekend</h3>
+            <p class="event-location">Paradise Valley, AZ &middot; Hotel guests + RSVP</p>
+          </div>
+          <a class="button-secondary" href="#">RSVP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bachelorette -->
+  <section class="section ivory">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Bridal Pool Party</span>
+        <h2>Bachelorette Inquiries</h2>
+        <p class="accent-line">White bikinis, pearl charms, and the whole group chat.</p>
+        <p style="margin-top: 12px;">Tell us about your trip and we'll get back to you with details and pricing.</p>
+      </div>
+      <form class="inquiry-form">
+        <div class="form-row">
+          <div>
+            <label for="inq-name">Name</label>
+            <input id="inq-name" type="text" required />
+          </div>
+          <div>
+            <label for="inq-email">Email</label>
+            <input id="inq-email" type="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="inq-phone">Phone</label>
+            <input id="inq-phone" type="tel" />
+          </div>
+          <div>
+            <label for="inq-date">Event Date</label>
+            <input id="inq-date" type="date" required />
+          </div>
+        </div>
+        <div>
+          <label for="inq-guests">Number of Guests</label>
+          <input id="inq-guests" type="number" min="2" required />
+        </div>
+        <div>
+          <label for="inq-message">Message</label>
+          <textarea id="inq-message" rows="4" placeholder="Tell us about the bride, the vibe, and the venue."></textarea>
+        </div>
+        <button class="button-primary" type="submit">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="logo">The Bikini Bar <span class="charm" style="color: var(--color-metallic-gold);">&#10022;</span></p>
+          <p class="tagline">Mix. Match. Charm. Repeat.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="builder.html">Build Your Bikini</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="shop.html?collection=charms">The Charm Bar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Find Your Fit</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get first access</h4>
+          <p style="font-size: var(--font-size-small);">Get first access to drops, charms, and pop-ups.</p>
+          <form class="signup-form" style="margin-top: 16px;">
+            <input type="email" placeholder="Your email" required />
+            <button class="button-primary" type="submit" style="background: var(--color-metallic-gold); border-color: var(--color-metallic-gold); color: var(--color-black);">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Bikini Bar. Scottsdale, AZ.</p>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer" aria-label="Cart">
+    <div class="cart-header">
+      <h3>Your Bikini Build</h3>
+      <button class="cart-close" aria-label="Close cart">&#10005;</button>
+    </div>
+    <div class="shipping-bar">
+      <span class="ship-label">$100.00 away from free shipping</span>
+      <div class="track"><div class="fill" style="width:0%"></div></div>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-upsell">
+      <strong>Finish the look.</strong><br />
+      Add charms, ties, or poolside extras before checkout.
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><span class="cart-total-amount">$0.00</span></div>
+      <button class="button-primary">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
